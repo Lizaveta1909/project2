@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDP</title>
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo"><img src="https://cdn.finanso.com/netcat_files/2022/3/phpsyauvz.jpg"alt="Логотип" class="logoimg" ></div>
+            <div class="title">Валовий внутрішній продукт </div>
+        </header>
+        <nav>
+            <ul class="list">
+                <li><a href="index4.html">Головна</a></li>
+                <li><a href="index5.html">ВВП України в умовах війни</a></li>
+                <li><a href="index6.html">Калькулятор</a></li>
+                <li><a href="index7.html">Перевірка знань</a></li>
+            </ul>
+        </nav>
+        <main>
+            <aside class="left">
+                <p class="answer">  Валовий внутрішній продукт (ВВП) вимірює вартість продукції та
+                    послуг, вироблених на території даної країни за визначений період, незалежно
+                    від того, знаходяться чинники виробництва у власності громадян даної країни
+                    або належать іноземцям. За допомогою нього можна простежити динаміку
+                    розвитку економіки країни та порівняти її досягнення з іншими державами.</p> </aside>
+                <article class="right">
+                <h1 class="h">ВВП на душу населення, як макроекономічний індикатор</h1>
+                    <p class="answer">ВВП на душу населення - це макроекономічний індикатор, що відображає стан економіки держави по відношенню до її громадян.</p>
+                <p class="answer">Власне ВВП не є об'єктивною оцінкою добробуту громадян. Наприклад, в двох країнах загальний ВВП може бути однаковим. Але при цьому більш високий рівень життя буде в країні з меншим населенням. З цієї причини реально відображає ситуацію саме ВВП на душу населення. Розраховується цей показник за максимально простою формулою: Загальний ВВП розділити на загальну кількість громадян.</p>
+        
+        
+        
+                <div class="wrapper"> 
+                    <h3>Введіть суму ВВП (млн дол)</h3>
+                <input type="text" id = "input_a">
+                    <h3>Введіть кількість населення країни (млн осіб)</h3>
+                <input type="text" id = "input_b"> 
+               <p> <button id="btn">Action</button> </p>
+               <input type="text" id = "input_c">
+        </div>
+        <script>
+            function fnc(){
+    let a=parseInt(input_a.value);
+    let b=parseInt(input_b.value);
+    let c=a/b;
+    input_c.value=c;
+    console.log(c)
+            }
+            btn.addEventListener("click",fnc);
+            </script>  
+            
+            
+            </article>
+        </main>
+        <footer>Усі права захищені</footer>
+
+    </div>
+</body>
+
+</html>
+  
